@@ -1,6 +1,8 @@
 
 # GG.jl
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sswatson/GG.jl/master?filepath=notebooks%2FExamples.ipynb)
+
 `GG` is a [`ggplot2`](https://ggplot2.tidyverse.org)-inspired grammar-of-graphics interface to [`Plots.jl`)](https://github.com/JuliaPlots/Plots.jl).
 It is designed to allow ggplot2 examples to be translated fairly directly from R to Julia: 
 
