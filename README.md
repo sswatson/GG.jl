@@ -43,5 +43,5 @@ Check out `test/runtests.jl` for examples.
 
 ```julia
 using Pkg
-Pkg.add("https://github.com/sswatson/GG.jl")
+Pkg.add(PackageSpec(url="https://github.com/sswatson/GG.jl"))
 ```
