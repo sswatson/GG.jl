@@ -1,7 +1,7 @@
 
 # GG.jl
 
-`GG` is a (`ggplot2`)[https://ggplot2.tidyverse.org]-inspired grammar-of-graphics interface to (`Plots.jl`)[https://github.com/JuliaPlots/Plots.jl].
+`GG` is a [`ggplot2`](https://ggplot2.tidyverse.org)-inspired grammar-of-graphics interface to [`Plots.jl`)](https://github.com/JuliaPlots/Plots.jl).
 It is designed to allow ggplot2 examples to be translated fairly directly from R to Julia: 
 
 ```julia
@@ -13,6 +13,9 @@ ggplot(data = iris) +
                    color = :PetalWidth),
                size = 4)
 ```
+
+![iris scatter plot](figures/iris.svg)
+
 
 Unprocessed keywords are passed directly to the underlying `Plots` object, so you can mix ggplot2 and Plots features.
 
@@ -33,6 +36,8 @@ geom_density
 geom_text
 geom_smooth
 ```
+
+Check out `test/runtests.jl` for examples.
 
 ## Installation
 
