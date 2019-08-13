@@ -7,11 +7,11 @@ It is designed to allow ggplot2 examples to be translated fairly directly from R
 ```julia
 using GG, RDatasets
 iris = dataset("datasets", "iris")
-ggplot(data = iris) +
-    geom_point(aes(x = :SepalLength,
-                   y = :SepalWidth,
-                   color = :PetalWidth),
-               size = 4)
+ggplot(data = iris, 
+       mapping = aes(x = :SepalLength,
+                     y = :SepalWidth)) +
+    geom_point(size = 2, legend = false) + 
+    geom_smooth(size = 2)
 ```
 
 ![iris scatter plot](figures/iris.svg)
